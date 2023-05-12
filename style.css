@@ -60,6 +60,8 @@ p {
 .subtext {
   font-size: 15px;
   font-weight: 300;
+  /* line-height: 1.5; */
+  padding: 5px;
 }
 
 .hero-area {
@@ -123,12 +125,19 @@ p {
   padding: 80px;
 }
 .headshot {
-  width: 250px;
+  width: 400px;
 }
 
 .headshot-container {
   display: flex;
   align-items: center;
+  width: 20%;
+}
+.information {
+  width: 60%;
+}
+#about-me-summary {
+  font-size: 20px;
 }
 
 .project-card {
@@ -142,8 +151,11 @@ p {
   display: flex;
   justify-content: space-around;
 }
-.github-link,
-.resume-link {
+#github-link {
+  color: #b8860b;
+  font-weight: bold;
+}
+#resume-link {
   color: #b8860b;
   font-weight: bold;
 }
@@ -154,7 +166,11 @@ p {
     flex-wrap: wrap;
   }
 }
-
+@media only screen and (max-width: 1000px) {
+  .hero-text {
+    font-size: 14px;
+  }
+}
 .project-image {
   margin-top: 25px;
   width: 250px;
